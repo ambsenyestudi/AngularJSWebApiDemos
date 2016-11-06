@@ -1,0 +1,7 @@
+﻿<div class="container-fluid">
+    <b>Clients </b>
+    <table class="table table-condensed">
+        <client-detail ng-repeat="client in $ctrl.clientList" client="client" on-delete="$ctrl.deleteClient(client)" on-update="$ctrl.updateClient(client, prop, value)"></client-detail>
+    </table>
+    
+</div>

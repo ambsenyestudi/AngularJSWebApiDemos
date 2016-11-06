@@ -1,0 +1,7 @@
+﻿<hr>
+
+    <div>Name <span>{{$ctrl.client.name}} Surname <span ng-bind="$ctrl.client.surname"></span> </span> </div>
+    <editable-field field-value="$ctrl.client.email" field-type="email" field-label="E-mail" on-update="$ctrl.update('email', value)"></editable-field><br>
+    <editable-field field-value="$ctrl.client.phone" field-type="text" field-label="Phone" on-update="$ctrl.update('phone', value)"></editable-field><br>
+    <button ng-click="$ctrl.delete()" class="btn btn-danger">Delete</button>
+    

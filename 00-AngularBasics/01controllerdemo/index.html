@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Module</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="ambseny estudi">
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-app="nextModuleApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Angular Js Demo Basics</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../00nojavascriptbindingdemo/index.html">No javascript binding</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Next Module</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <br />
+    <div class="container" ng-controller="NextController">
+        <!-- Page Heading-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Angular Js Demo Basics
+                    <small>here your learn the basics the good practices will come later</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <h1 ng-bind="title"></h1>
+            <h2>This example will show how to bind a data model</h2>
+            <h3>
+                This is going be easy just type some thing at the text field
+            </h3>
+            <h4>
+                With no code, just Angular.js directive you will be able to see binding in action in a neat way
+            </h4>
+            <p>
+                Of course you need to refrence angular.min.js and have a an angular angular.module
+                matching the name of your ng-app which in our case is al our nojavascriptapp.js file
+            </p>
+        </div>
+        <!-- /.row -->
+        <!--our first directive (actually ng-app was a directive) anyhing that goes ng--something is a directive-->
+        <div class="row">
+            <h3>This is the easy way (look up for easyName)</h3>
+            <input type="text" ng-model="simpleBindedName" placeholder="Enter your name" />
+            <h1>
+                {{simpleBindedName}}
+            </h1>
+        </div>
+        <!-- /.row -->
+        <!--this is the good practice way-->
+        <div class="row">
+            <h3>Good practice example (look up for goodPracticeBindedName)</h3>
+            <input type="text" ng-model="ngBindedName" placeholder="Enter your name" />
+            <h1 ng-bind="ngBindedName"></h1>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <h2>Let's enjoy ourselves clicking really fast</h2>
+            <h3>Click count <span ng-bind="clickCount"></span></h3>
+            <br/>
+            <button ng-click="increaseClickCountBy(1)">Click Me</button>
+            <button ng-click="nextClickCount()">Click Me</button>
+        </div>
+        <!-- /.row -->
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Ambseny estudi</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!--don't forget to refrence your script at the bottom of your page-->
+    <script src="../Scripts/angular.min.js"></script>
+    <!--rembmeber to always refrence your main app module defintion or nothing will work-->
+    <script src="app/nextModuleApp.js"></script>   
+    <script src="nextModule/nextModule.js"></script>   
+</body>
+</html>
