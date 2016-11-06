@@ -84,7 +84,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="00nojavascriptbindingdemo\app\nojavascriptapp.js" />
+    <Content Include="00nojavascriptbindingdemo\app\index.js" />
     <Content Include="00nojavascriptbindingdemo\index.html" />
     <Content Include="01controllerdemo\app\nextModuleApp.js" />
     <Content Include="01controllerdemo\index.html" />
