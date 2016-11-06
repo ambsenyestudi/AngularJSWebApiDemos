@@ -71,7 +71,6 @@
     <Content Include="02Components\app\clientList\clientList.html" />
     <Content Include="02Components\app\clientList\clientList.js" />
     <Content Include="02Components\app\editableField\editableField.html" />
-    <Content Include="02Components\app\editableField\editableFieldOld.js" />
     <Content Include="02Components\app\editableField\editableField.js" />
     <Content Include="02Components\Index.html" />
     <Content Include="02Components\index.js" />
